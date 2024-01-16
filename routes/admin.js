@@ -15,23 +15,10 @@ router.get('/products', adminController.getProducts);
 // /admin/add-product => POST
 router.post('/add-product', adminController.postAddProduct);
 
+router.get('/edit-product/:productId', adminController.getEditProduct);
+
+router.post('/edit-product', adminController.postEditProduct);
+
+router.post('/delete-product', adminController.postDeleteProducts);
+
 module.exports = router;
-
-
-
-// const path = require('path');
-
-// const express = require('express');
-
-// // const rootDir = require('../util/path');
-// const productsController = require('../controllers/admin');
-
-// const router = express.Router();
-
-// // /admin/add-product => GET
-// router.get('/add-product', productsController.getAddProduct);
-
-// // /admin/add-product => POST
-// router.post('/add-product', productsController.postAddProduct);
-
-// module.exports = router;
